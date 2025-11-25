@@ -1,6 +1,7 @@
 import hello_world
 import unittest
 
+
 class TestHelloWorld(unittest.TestCase):
 
     def setUp(self):
@@ -14,6 +15,7 @@ class TestHelloWorld(unittest.TestCase):
     def test_greeting_message(self):
         greeting = 'Welcome to CI/CD 101 using GitHub Actions!'
         self.assertEqual(hello_world.greet(), greeting)
+
 
 if __name__ == '__main__':
     unittest.main()
