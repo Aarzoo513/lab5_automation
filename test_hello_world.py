@@ -11,7 +11,7 @@ class TestHelloWorld(unittest.TestCase):
     def test_status_code(self):
         response = self.app.get('/greeting')
         self.assertEqual(response.status_code, 200)
-    
+
     def test_greeting_message(self):
         greeting = 'Welcome to CI/CD 101 using GitHub Actions!'
         self.assertEqual(hello_world.greet(), greeting)
